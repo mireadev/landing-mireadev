@@ -1,0 +1,8 @@
+.about-title{font-size:18px;font-weight:700;margin:10px 0}.about-photos{padding:10px 0}.about-photos img{border-radius:50%;max-height:128px;masx-width:128px}.about-photos span{display:block}.about-photos .person-status{margin-top:10px;font-weight:700}.about-photos .person-desc{font-style:italic}
+.form-contact{margin-top:10px}.form-contact .form-control{margin:10px 0}.form-contact textarea{min-height:100px}
+footer{padding-top:25px;padding-bottom:25px;margin-top:100px;color:#99979c;text-align:center;background-color:#2a2730}.footer-inner a{color:#fff}.footer-inner li{list-style:none;padding:5px 0}
+.float-none{float:none!important}
+.header-blue{background-color:#2196f3!important;border-color:#010306!important}.header-blue a{color:#b2dbfb!important}.header-blue a:hover{color:#fff!important}.header-blue .navbar-toggle{border:none}.header-blue .navbar-toggle:hover{background-color:#1d85d6}
+.footer-icons{width:20px;margin-right:5px;color:#fff;opacity:.8;vertical-align:center;text-align:center}
+.panel-title{font-size:20px}
+body{background-image:url(../img/background/bright_squares_@2X.png)}.parallaxOne{margin-top:50px}.info-block{background:#fff;color:#2196f3;font-size:20px;border-radius:10px;border:2px solid #2196f3;margin-bottom:10px;padding:5px}.bg-blue,.bg-blue:focus{color:#fff}.margin-top-25{margin-top:25px}.bg-blue{background-color:#2196f3!important;border-color:#2196f3!important}.bg-blue:hover{color:#fff;background-color:#337ab7!important;border-color:#2e6da4!important}

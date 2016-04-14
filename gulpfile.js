@@ -69,17 +69,12 @@ gulp.task('watch', function () {
 /* -------------------- Dependencies */
 //Material
 gulp.task('buildDep', function () {
-    //Bootstrap
-    gulp.src('node_modules/bootstrap/dist/css/*.min.css')
-        .pipe(gulp.dest(DEST + 'bootstrap'))
+    //material
+    gulp.src('node_modules/material-design-lite/*.min.css')
+        .pipe(gulp.dest(DEST + 'material'))
         .pipe(livereload());
-    gulp.src('node_modules/bootstrap/dist/js/*.min.js')
-        .pipe(gulp.dest(DEST + 'bootstrap'))
-        .pipe(livereload());
-
-    //Jquery
-    gulp.src('node_modules/jquery/dist/*.min.js')
-        .pipe(gulp.dest(DEST + 'jquery'))
+    gulp.src('node_modules/material-design-lite/*.min.js')
+        .pipe(gulp.dest(DEST + 'material'))
         .pipe(livereload());
 });
 

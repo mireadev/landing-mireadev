@@ -37,155 +37,151 @@ html(lang="ru")
         link(rel="icon", sizes="16x16 32x32", href="favicon.ico")
         link(rel="apple-touch-icon-precomposed", href="build/img/favicon/152.png")
         <!-- Styles -->
-        link(rel='stylesheet', href='build/bootstrap/bootstrap.min.css')
-        link(rel='stylesheet', href='build/css/css.min.css')
+        link(rel='stylesheet', href='build/material/material.min.css')
         link(rel='stylesheet', href='build/css/style.min.css')
         <!-- Scripts -->
-        script(type='text/javascript' src='build/js/js.min.js')
+        //script(type='text/javascript' src='build/js/js.min.js')
     body
-        //Header nav
-        nav.navbar.navbar-inverse.navbar-fixed-top.header-blue
-            div.container-fluid
-                //Mobile nav
-                div.navbar-header
-                    button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#header-links", aria-expanded="false")
-                        span.sr-only Меню
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                //Navigation links
-                div.collapse.navbar-collapse#header-links
-                    ul.nav.navbar-nav.color-light-blue
-                        li.text-center
-                            a(href="#about") О нас
-                        li.text-center
-                            a(href="#contact") Связаться с нами
-                        li.text-center
-                            a(href="#join") Стать частью команды
-                            //a(href="#") Наша команда
-                        //li.text-center
-                            a(href="#")  Наши разработки
-                    //a.navbar-brand(href="#") [MireaDev]
-        //Header nav end
+        div.mdl-layout.mdl-js-layout
+            //Header nav
+            header.mdl-layout__header.mdl-color--blue-grey
+                div.mdl-layout__header-row
+                    span.mdl-layout-title.my--large-screen-only Подразделение разработки
+                    span.mdl-layout-title.my--small-screen-only MireaDev
+                    div.mdl-layout-spacer
+                    nav.mdl-navigation.mdl-layout--large-screen-only
+                        a.mdl-navigation__link(href='#about') О нас
+                        a.mdl-navigation__link(href='#contact') Связаться с нами
+                        a.mdl-navigation__link(href='#join') Стать частью команды
 
-        //Image
-        div.container.parallaxOne
-            div.bg
-            div.jumbotron
-        //Image end
+            //Mobile nav
+            div.mdl-layout__drawer
+                span.mdl-layout-title Подразделение разработки
+                nav.mdl-navigation
+                    a.mdl-navigation__link(href='#about') О нас
+                    a.mdl-navigation__link(href='#contact') Связаться с нами
+                    a.mdl-navigation__link(href='#join') Стать частью команды
 
-        //Page content
-        div.container
-            //Info blocks
-            div.rows.clearfix
-                div.col-lg-3.col-md-6.col-sm-12.col-xs-12
-                    div.info-block.text-center
-                        div.key 60+
-                        div.value Участников
+            //Header nav end
+            main.mdl-layout__content
+                div.page-content
+                    //Image
+                    div.container.parallaxOne
+                        div.bg
+                        div.jumbotron
+                    //Image end
 
-                div.col-lg-3.col-md-6.col-sm-12.col-xs-12
-                    div.info-block.text-center
-                        div.key 4
-                        div.value Вектора разработки
+                    //Page content
+                    div.container
+                        //Info blocks
+                        div.rows.clearfix
+                            div.col-lg-3.col-md-6.col-sm-12.col-xs-12
+                                div.info-block.text-center
+                                    div.key 60+
+                                    div.value Участников
 
-                div.col-lg-3.col-md-6.col-sm-12.col-xs-12
-                    div.info-block.text-center
-                        div.key 10+
-                        div.value Задач
+                            div.col-lg-3.col-md-6.col-sm-12.col-xs-12
+                                div.info-block.text-center
+                                    div.key 4
+                                    div.value Вектора разработки
 
-                div.col-lg-3.col-md-6.col-sm-12.col-xs-12
-                    div.info-block.text-center
-                        div.key 1
-                        div.value Общая цель
-            //Info blocks end
+                            div.col-lg-3.col-md-6.col-sm-12.col-xs-12
+                                div.info-block.text-center
+                                    div.key 10+
+                                    div.value Задач
 
-            //About us
-            div#about.panel.panel-primary.margin-top-25
-                div.panel-heading.bg-blue
-                    h2.panel-title.text-center О нас
+                            div.col-lg-3.col-md-6.col-sm-12.col-xs-12
+                                div.info-block.text-center
+                                    div.key 1
+                                    div.value Общая цель
+                        //Info blocks end
 
-                div.panel-body.text-center
-                    div.about-title Поздразделение разработки [MireaDev]
-                    | Это студенческая структура, в которой ребята,
-                    | интересующиеся программированием, создают приложения для оптимизации жизни внутри МТУ,
-                    | а также проводят хакатоны, образовательные курсы и другие мероприятия, нацеленные на развитие в сфере ИТ.
-                    div.about-title Кураторы
-                    div.about-photos.clearfix
-                        div.col-md-3
-                            img(src="build/img/about/photo.jpg")
-                            span.person-status Team lead
-                            span.person-desc Team lead
-                        div.col-md-3
-                            img(src="build/img/about/photo.jpg")
-                            span.person-status Android Dev
-                            span.person-desc Android Dev
-                        div.col-md-3
-                            img(src="build/img/about/photo.jpg")
-                            span.person-status Web Dev
-                            span.person-desc Web Dev
-                        div.col-md-3
-                            img(src="build/img/about/photo.jpg")
-                            span.person-status Designer
-                            span.person-desc Designer
+                        //About us
+                        div#about.panel.panel-primary.margin-top-25
+                            div.panel-heading.bg-blue
+                                h2.panel-title.text-center О нас
 
-            //About end
+                            div.panel-body.text-center
+                                div.about-title Подразделение разработки [MireaDev]
+                                | Это студенческая структура, в которой ребята,
+                                | интересующиеся программированием, создают приложения для оптимизации жизни внутри МТУ,
+                                | а также проводят хакатоны, образовательные курсы и другие мероприятия, нацеленные на развитие в сфере ИТ.
+                                div.about-title Кураторы
+                                div.about-photos.clearfix
+                                    div.col-md-3
+                                        img(src="build/img/about/photo.jpg")
+                                        span.person-status Team lead
+                                        span.person-desc Team lead
+                                    div.col-md-3
+                                        img(src="build/img/about/photo.jpg")
+                                        span.person-status Android Dev
+                                        span.person-desc Android Dev
+                                    div.col-md-3
+                                        img(src="build/img/about/photo.jpg")
+                                        span.person-status Web Dev
+                                        span.person-desc Web Dev
+                                    div.col-md-3
+                                        img(src="build/img/about/photo.jpg")
+                                        span.person-status Designer
+                                        span.person-desc Designer
 
-            //Contact form
-            div#contact.panel.panel-primary.margin-top-25
-                div.panel-heading.bg-blue
-                    h2.panel-title.text-center Связаться с нами
+                        //About end
 
-                div.panel-body.text-center
-                    span Если у Вас есть запрос на разработку какого-либо приложения, сайта, автоматизации какой-либо задачи или проведения мероприятия, то оставьте нам заявку
-                    div.form-contact.clearfix
-                        div.col-md-6.center-block.float-none
-                            input.form-control(type="email", placeholder="Ваша почта")
-                            input.form-control(type="text", placeholder="Тема письма")
-                            textarea.form-control(type="text", placeholder="Текст письма")
-                            button(type="button").btn.bg-blue Отправить заявку
+                        //Contact form
+                        div#contact.panel.panel-primary.margin-top-25
+                            div.panel-heading.bg-blue
+                                h2.panel-title.text-center Связаться с нами
+
+                            div.panel-body.text-center
+                                span Если у Вас есть запрос на разработку какого-либо приложения, сайта, автоматизации какой-либо задачи или проведения мероприятия, то оставьте нам заявку
+                                div.form-contact.clearfix
+                                    div.col-md-6.center-block.float-none
+                                        input.form-control(type="email", placeholder="Ваша почта")
+                                        input.form-control(type="text", placeholder="Тема письма")
+                                        textarea.form-control(type="text", placeholder="Текст письма")
+                                        button(type="button").btn.bg-blue Отправить заявку
 
 
 
-            //Contact form end
+                        //Contact form end
 
-            //Join form
-            div#join.panel.panel-primary.margin-top-25
-                div.panel-heading.bg-blue
-                    h2.panel-title.text-center Стать частью команды
+                        //Join form
+                        div#join.panel.panel-primary.margin-top-25
+                            div.panel-heading.bg-blue
+                                h2.panel-title.text-center Стать частью команды
 
-                div.panel-body.text-center
-                    div
-                        | Самый простой способ — написать нам в&nbsp;
-                        a(href="") данной теме
-                        | .
-                    div
-                        | Либо можно написать на почту&nbsp;
-                        a(href="mailto:team@mirea.top") team@mirea.top
-            //Join form end
-        //Page content end
+                            div.panel-body.text-center
+                                div
+                                    | Самый простой способ — написать нам в&nbsp;
+                                    a(href="") данной теме
+                                    | .
+                                div
+                                    | Либо можно написать на почту&nbsp;
+                                    a(href="mailto:team@mirea.top") team@mirea.top
+                        //Join form end
+                    //Page content end
 
-        //Footer
-        footer
-            div.container.footer-inner
-                ul.footer-links.col-md-6
-                    li
-                        span.fa-vk.fa.fa-lg.footer-icons
-                        a(href="https://vk.com/mireadev") ВКонтакте
-                    li
-                        span.fa-github.fa.fa-lg.footer-icons
-                        a(href="https://github.com/mireadev/") GitHub
-                ul.footer-links.col-md-6
-                    li
-                        span.fa-lightbulb-o.fa.fa-lg.footer-icons
-                        a(href="mailto:work@mirea.top") Предложения: work@mirea.top
-                    li
-                        span.fa-file-text-o.fa.fa-lg.footer-icons
-                        a(href="mailto:press@mirea.top") Пресса: press@mirea.top
-                ul.footer-links.col-md-12
-                    li
-                        span 2016, MireaDev Team
+                    //Footer
+                    footer.mdl-mini-footer.flex-center.text-center.full-width
+                        div.mdl-mini-footer__left-section.mdl-grid.flex-center
+                            ul.mdl-mini-footer__link-list.footer-links.mdl-cell--6-col.flex-column
+                                li
+                                    span.fa-vk.fa.fa-lg.footer-icons
+                                    a(href="https://vk.com/mireadev") ВКонтакте
+                                li
+                                    span.fa-github.fa.fa-lg.footer-icons
+                                    a(href="https://github.com/mireadev/") GitHub
+                            ul.mdl-mini-footer__link-list.footer-links.mdl-cell--6-col.flex-column
+                                li
+                                    span.fa-lightbulb-o.fa.fa-lg.footer-icons
+                                    a(href="mailto:work@mirea.top") Предложения: work@mirea.top
+                                li
+                                    span.fa-file-text-o.fa.fa-lg.footer-icons
+                                    a(href="mailto:press@mirea.top") Пресса: press@mirea.top
+                            ul.mdl-mini-footer__link-list.footer-links.mdl-cell--12-col.flex-center.flex-column
+                                li
+                                    span 2016, MireaDev Team
 
 
-script(src="build/jquery/jquery.min.js")
-script(src="build/bootstrap/bootstrap.min.js")
 script(src="build/js/js.min.js")
+script(src="build/material/material.min.js")

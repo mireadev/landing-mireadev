@@ -1,7 +1,7 @@
 {
   "name": "landing-mireadev",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page for MireaDev Team",
   "main": "index.html",
   "scripts": {
     "start": "npm update --save && npm install",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mireadev/landing-mireadev"
   },
   "bugs": {
-    "url": "/issues"
+    "url": "https://github.com/mireadev/landing-mireadev/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/mireadev/landing-mireadev",
   "author": "MireaDevTeam",
   "license": "MIT",
   "dependencies": {

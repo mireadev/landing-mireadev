@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "flexboxgrid": "^6.3.0",
+    "flexboxgrid-helpers": "^1.0.1",
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {

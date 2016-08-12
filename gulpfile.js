@@ -39,6 +39,12 @@ var npm_src = [
         dest: 'css'
     },
 
+    //flexboxgrid-helpers
+    {
+        src: 'node_modules/flexboxgrid-helpers/dist/flexboxgrid-helpers.min.*',
+        dest: 'css'
+    },
+
     //bootstrap-grid
     {
         src: 'node_modules/bootstrap-grid/dist/grid.min.*',

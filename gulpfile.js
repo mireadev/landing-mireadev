@@ -57,8 +57,8 @@ var npm_src = [
 
 
 /* Destination folder */
-var DEST = 'dist/';
-var dest_html = DEST + '';
+var DEST = 'dist/assets/';
+var dest_html = 'dist/';
 
 
 /* Other */

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "init": "mkdir -p sources\\img\\favicon && npm update --save && npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm update --save && npm install",
+    "mdl": "npm i -S material-design-lite",
+    "jq": "npm i -S jquery",
+    "fn": "npm i -S flexboxgrid normalize.css"
   },
   "repository": {
     "type": "git",
@@ -21,16 +23,16 @@
     "material-design-lite": "^1.1.3"
   },
   "devDependencies": {
+    "browser-sync": "*",
     "gulp": "*",
-    "gulp-autoprefixer": "*",
+    "gulp-plumber": "*",
     "gulp-concat": "*",
-    "gulp-cssmin": "*",
-    "gulp-imagemin": "*",
-    "gulp-jade": "*",
     "gulp-jsmin": "*",
-    "gulp-livereload": "*",
-    "gulp-rename": "*",
+    "gulp-jade": "*",
+    "gulp-cssmin": "*",
     "gulp-stylus": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-imagemin": "*",
     "imagemin-pngquant": "*"
   }
 }

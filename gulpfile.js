@@ -39,6 +39,12 @@ var npm_src = [
         dest: 'css'
     },
 
+    //bootstrap-grid
+    {
+        src: 'node_modules/bootstrap-grid/dist/grid.min.*',
+        dest: 'css'
+    },
+
     //normalize
     {
         src: 'node_modules/normalize.css/normalize.css',

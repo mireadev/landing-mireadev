@@ -20,8 +20,7 @@
   "author": "MireaDevTeam",
   "license": "MIT",
   "dependencies": {
-    "bootstrap-grid": "^2.0.1",
-    "material-design-lite": "^1.1.3",
+    "flexboxgrid": "^6.3.0",
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {
